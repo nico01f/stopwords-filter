@@ -12,6 +12,10 @@ module Stopwords
       words - @stopwords
     end
 
+    def fetch words
+      words + @stopwords
+    end
+
     def stopword? word
       stopwords.include? word
     end
